@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient rgba(0,0,0,0.8),rgba(0,0,0,0.2),url(2.jpg);
+    background-image:url(nature.avif) ;
+    background-size: cover;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: rgb(1, 60, 1);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size:2em ;
+    letter-spacing: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.menu a:hover{
+    border:3px solid indianred;
+    background: transparent;
+}
+.register a{
+    text-decoration: none;
+    color:#fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    background: indianred;
+
+}
+.register a:hover{
+    border:1px solid indianred;
+    background: transparent;
+}
+.h-text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    max-width: 650px;
+    transform: translate(-50%,-50px);
+    text-align: center;
+    color: #fff;
+} 
+.h-text span{
+    letter-spacing: 5px;
+}
+.h-text h1{
+    font-size: 3,5em;
+}
+.h-text a{
+    text-decoration: none;
+    background: indianred;
+    padding: 10px 20px;
+    color:#fff;
+    letter-spacing: 5px;
+    transition: 0.4s;
+}
+.h-text a:hover{
+    border:1px solid indianred;
+    background: transparent;
+}
+.popup{
+    width:300px;
+    background: #c1f6bf;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 20px 20px;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup .input{
+    padding:8px;
+    display: flex;
+    align-items: denter;
+    justify-content: center;
+    flex-direction: column;
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin:8px 0 5px;
+}
+.popup button{
+    width: 80%;
+    margin-top: 10px;
+    padding:7px 0;
+    background: #068402;
+    color: #c1f6bf;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+}
+.btn2{
+    width: 80%;
+    margin-top: 10px;
+    padding:7px 0;
+    background: #068402;
+    color: #c1f6bf;
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.3);
+} 
+

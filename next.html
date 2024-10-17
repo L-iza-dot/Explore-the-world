@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pass value</title>
+</head>
+<body>
+    <h1>Data from previous page</h1>
+    <div>Name: <br><span id="name"></span></div>
+    <div>E-Mail: <br><span id="email"></span></div>
+    <div>Password: <br><span id="password"></span></div>
+    <script>
+        const name = localStorage.getItem("name");
+        const email = localStorage.getItem("email");
+        const password = localStorage.getItem("password");
+
+        document.getElementById("name").textContent = name;
+        document.getElementById("email").textContent = email;
+        document.getElementById("password").textContent = password;
+    </script>
+</body>
+</html>
